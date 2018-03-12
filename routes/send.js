@@ -7,7 +7,7 @@ var auth = require('../middlewares/auth');
 console.log('in send.js');
 
 router.get('/', function(req,res,next){
-    res.status(200).json({"message":"invalid request"});
+    res.status(200).json({"message":"invalid-request"});
 });
 
 router.post('/', auth, sendController);

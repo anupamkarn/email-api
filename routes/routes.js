@@ -1,4 +1,4 @@
-var search = require('./send');
+var send = require('./send');
 
 module.exports = function(app) {
 
