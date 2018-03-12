@@ -1,0 +1,8 @@
+{
+  "name": "email-api",
+  "description": "A email client api using express 4",
+  "repository": "https://github.com/hiteshnayak305/email-api.git",
+  "logo": "",
+  "keywords": ["send mail", "email client"],
+  "image": ""
+}

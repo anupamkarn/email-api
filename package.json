@@ -1,0 +1,23 @@
+{
+  "name": "email-api",
+  "version": "0.0.1",
+  "description": "A email client api using express 4 ",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hiteshnayak305/email-api.git"
+  },
+  "license": "MIT"
+}
