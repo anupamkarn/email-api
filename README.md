@@ -32,6 +32,11 @@ node index.js
 ```
 
 ### Deployed on Heroku
-email-api https://email-api.herokuapp.com
+email-api https://api-email.herokuapp.com
 
 ### Usage
+
+**key is 'alohamora'
+
+use post request as
+https://api-email.herokuapp.com/send  {'key': key, 'name': name, 'email': email, 'phone': phone, 'message': message}
