@@ -1,6 +1,6 @@
 var config = {
     mail: {
-        admin:'drupesh2008@gmail.com',
+        admin:'hiteshnayak305@gmail.com',
         type: 'SMTP',
         smtp_host: 'smtp.gmail.com',
         smtp_port: '587',
