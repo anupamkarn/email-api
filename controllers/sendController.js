@@ -23,7 +23,7 @@ module.exports = function(req, res, next) {
         var mailOptions = {
             from: '"' + req.body.name + '" <' + req.body.email + '>', // sender address
             to: config.mail.admin, // list of receivers
-            subject: 'From E-krishi client', // Subject line
+            subject: req.body.subject, // Subject line
             text: req.body.message, // plain text body
             html: '<b>' + req.body.message + '</b>' // html body
         };

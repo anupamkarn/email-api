@@ -39,4 +39,4 @@ email-api https://api-email.herokuapp.com
 **key is 'alohamora'
 
 use post request as
-https://api-email.herokuapp.com/send  {'key': key, 'name': name, 'email': email, 'phone': phone, 'message': message}
+https://api-email.herokuapp.com/send  {'key': key, 'subject': subject_email 'name': name, 'email': email, 'phone': phone, 'message': message}
