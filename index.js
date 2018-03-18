@@ -7,7 +7,13 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(bodyParser.json());
-
+app.use(function(req, res, next) //CORs request handle, coss origin resourse sharing
+{
+	res.setHeader('Access-Control-Allow-Origin', '*');
+	res.setHeader('Access-Control-Allow-Methods', 'GET,POST');
+	res.setHeader('Access-Control-Allow-Headers', 'content-type');
+	next();
+});
 //routes
 require('./routes/routes')(app);
 

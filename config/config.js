@@ -1,5 +1,6 @@
 var config = {
     mail: {
+        admin:'drupesh2008@gmail.com',
         type: 'SMTP',
         smtp_host: 'smtp.gmail.com',
         smtp_port: '587',
@@ -7,7 +8,7 @@ var config = {
             secure: false,
             service: 'Gmail',
             auth: {
-                user: 'hiteshnayak305@gmail.com',
+                user: 'noreply.ekrishi@gmail.com',
                 pass: 'hn4nov96'
             }
         }

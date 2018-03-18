@@ -22,8 +22,8 @@ module.exports = function(req, res, next) {
         // setup email data with unicode symbols
         var mailOptions = {
             from: '"' + req.body.name + '" <' + req.body.email + '>', // sender address
-            to: 'hiteshnayak305@gmail.com', // list of receivers
-            subject: 'From Portfolio', // Subject line
+            to: config.mail.admin, // list of receivers
+            subject: 'From E-krishi client', // Subject line
             text: req.body.message, // plain text body
             html: '<b>' + req.body.message + '</b>' // html body
         };
@@ -31,17 +31,11 @@ module.exports = function(req, res, next) {
         // send mail with defined transport object
         transporter.sendMail(mailOptions, function (error) {
             if (error) {
-                res.header('Access-Control-Allow-Origin', '*');
-    	        res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE');
-    	        res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
                 res.status(200).json({"message":"error"});            
                 return console.log(error);
+            } else {
+                res.status(200).json({"message":"success"});
             }
         });
     });
-
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-    res.status(200).json({"message":"success"});
 };
